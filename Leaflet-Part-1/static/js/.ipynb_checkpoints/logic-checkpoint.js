@@ -23,7 +23,7 @@ function createFeatures(eqData) {
         let size = feature.properties.mag * 4;
         // Depth-based color calculation
         let depth = feature.geometry.coordinates[2];
-        let color = depth >= 90 ? "#e60000" : depth >= 70 ? "#ff6666" : depth >= 50 ? "#ff8533" : depth >= 30 ? "#ffdb4d" : depth >= 10 ? "#dfff80" : "#ccffcc";
+        let color = depth >= 90 ? "#e60000" : depth >= 70 ? "#ff6600" : depth >= 50 ? "#ffc266" : depth >= 30 ? "#ffff80" : depth >= 10 ? "#ddff99" : "#b3f0ff";
         
         // Customize circle marker.
         return L.circleMarker(coords, {radius: size,
@@ -66,7 +66,7 @@ function createMap(eqs) {
     legend.onAdd = function (map) {
     let div = L.DomUtil.create("div", "legend");
     let grades = ["-10", "10", "30", "50", "70", "90"];
-    let colors = ["#ccffcc", "#dfff80", "#ffdb4d", "#ff8533", "#ff6666", "#e60000"];
+    let colors = ["#b3f0ff", "#ddff99", "#ffff80", "#ffc266", "#ff6600", "#e60000"];
     
     // Loop through the depth intervals to associate a color with each interval.
     for (let i = 0; i < grades.length; i++) {
