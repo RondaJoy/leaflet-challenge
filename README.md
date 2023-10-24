@@ -1,10 +1,14 @@
 
 **UCB Data Analysis Module 15**
-# Leaflet Challenge
+## Leaflet Challenge with HTML and JavaScript
 
 ---------------
 #### Purpose:
-Generate a map using data from USGS, formatted as GeoJSON, and visualize the data points using Leaflet. This project will provide USGS with the tools to better educate the public and other government organizations (and hopefully secure more funding) on issues facing our planet.
+Generate a map using data from USGS, formatted as GeoJSON, and visualize the data points using Leaflet. This project will provide USGS with the tools to better educate the public and other government organizations (and hopefully secure more funding) on issues facing our planet.  
+
+Output:  
+
+![EQmap](EQmap.PNG)
 
 --------------
 #### Contents of Repository:
